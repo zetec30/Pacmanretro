@@ -9,7 +9,7 @@ var bcrypt = require('bcryptjs');
 const passport = require('passport');
 const session = require('express-session');
 
-const port = process.env.port || 3001;
+const port = process.env.PORT || 3001;
 const mongoURL = process.env.mongoURL || 'mongodb+srv://mike:DIgitalcat14!@cluster0-fssfj.mongodb.net/Pacman-515?retryWrites=true&w=majority';
 
 const { isAuth } = require('./middleware/isAuth');
